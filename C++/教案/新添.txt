@@ -1,0 +1,2 @@
+g)	int*p[2]Óë int (*p)[2]
+c)	begin¡¢endlº¯Êı
