@@ -27,8 +27,8 @@ void Player::RankCards()
 	int cardNum_A_2 = 0;	//A和2的总和
 	bool queen = false;		//是否是小王
 	bool king = false;		//是否是大王
-	int cardKingSub = 0;	//大王的下标
-	int card2Sub = 0;		//2的下标
+	int cardKingSub = 0;	//大小王后紧跟着的元素的下标
+	int card2Sub = 0;		//3后面紧跟着的下标
 	bool cardKingSubOnlyOnce = true;	//判断大小王后面位置的下标时，仅判断一次
 	bool card2SubOnlyOnce = true;		//判断A和2起始位置的下标时，仅判断一次
 	Card temArray[8];		//临时保存A和2的卡牌
