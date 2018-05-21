@@ -8,9 +8,13 @@ class Player
 public:
 	Player();
 	~Player();
-	
+
+
 	void SetCard(int i,Card card);
+
+	//≈≈–Ú
 	void RankCards();
+	//’π æ ÷≈∆
 	void ShowCards();
 
 private:

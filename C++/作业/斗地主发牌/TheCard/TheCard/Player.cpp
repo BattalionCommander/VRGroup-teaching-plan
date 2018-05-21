@@ -20,18 +20,18 @@ void Player::SetCard(int i, Card card)
 
 void Player::RankCards()
 {
-	int cardNum;
-	Card tem;
-	int cardNum_A = 0;
-	int cardNum_2 = 0;
-	int cardNum_A_2 = 0;
-	bool queen = false;
-	bool king = false;
-	int cardKingSub = 0;
-	int card2Sub = 0;
-	bool cardKingSubOnlyOnce = true;
-	bool card2SubOnlyOnce = true;
-	Card temArray[8];
+	int cardNum;	//手牌数量
+	Card tem;		//临时保存卡牌
+	int cardNum_A = 0;	// A的数量
+	int cardNum_2 = 0;	// 2的数量
+	int cardNum_A_2 = 0;	//A和2的总和
+	bool queen = false;		//是否是小王
+	bool king = false;		//是否是大王
+	int cardKingSub = 0;	//大王的下标
+	int card2Sub = 0;		//2的下标
+	bool cardKingSubOnlyOnce = true;	//判断大小王后面位置的下标时，仅判断一次
+	bool card2SubOnlyOnce = true;		//判断A和2起始位置的下标时，仅判断一次
+	Card temArray[8];		//临时保存A和2的卡牌
 
 
 	//防止手牌为空 

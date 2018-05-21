@@ -81,6 +81,7 @@ void Dealer::Deal(Player &Player1, Player &Player2, Player &Player3)
 		_Cards[i * 3 + 2]._Name.clear();
 		_Cards[i * 3 + 2]._Number = _Zero;
 	}
+
 	switch (_Random)
 	{
 	case 0:
