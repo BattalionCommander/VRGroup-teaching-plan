@@ -8,6 +8,8 @@ Dealer::~Dealer()
 {
 
 }
+
+//第一层循环控制花色，第二层控制数字，最后再设置大小王
 void Dealer::GetCard()
 {
 	string _Type;
@@ -43,6 +45,7 @@ void Dealer::GetCard()
 	cout << "取牌完成！" << endl;
 }
 
+//54次循环，每次产生随机数，将54张牌依次与随机出的位置交换顺序，保证每张牌都至少移动过一次位置
 void Dealer::Shuffle()
 {
 	int _Random = 0;
@@ -62,6 +65,10 @@ void Dealer::Shuffle()
 	cout << "洗牌完成！" << endl;
 }
 
+
+//1.使用友元类，使得可以访问Player中的数据
+//2.使用随机数控制地主
+//3.使用循环依次发牌，并在最后将剩下的三张牌发给地主。赋值的同时将原数据清空。
 void Dealer::Deal(Player &Player1, Player &Player2, Player &Player3)
 {
 	int _Random = rand() % 3;
